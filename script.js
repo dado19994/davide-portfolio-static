@@ -156,7 +156,7 @@ const counterObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.6 });
 
-document.querySelectorAll('.summary-stat strong').forEach(el => {
+document.querySelectorAll('.summary-stat strong, .about-stat strong').forEach(el => {
     if (/^\d/.test(el.textContent.trim())) {
         el.setAttribute('data-target', el.textContent.trim());
         counterObserver.observe(el);
@@ -263,3 +263,19 @@ function initLightbox(selector) {
 
 initLightbox('.virginia-gallery-item');
 initLightbox('.vendohub-gallery-item');
+
+// ── PAGE TRANSITIONS ─────────────────────────────────────────
+document.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href') || '';
+    // Only intercept internal .html navigations
+    if (!href.match(/^\.?\/?\w[\w-]*\.html$/) && !href.endsWith('.html')) return;
+    if (href.startsWith('http') || link.target === '_blank' || link.hasAttribute('download')) return;
+
+    link.addEventListener('click', e => {
+        const dest = link.href;
+        if (dest === window.location.href) return;
+        e.preventDefault();
+        document.body.classList.add('is-leaving');
+        setTimeout(() => window.location.assign(dest), 250);
+    });
+});

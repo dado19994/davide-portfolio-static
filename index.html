@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Davide D’Ignazio | Laravel Developer & AI Integration</title>
     <meta name="description" content="Portfolio di Davide D’Ignazio, Laravel Developer specializzato in web products, dashboard, marketplace, AI Integration e UI/UX." />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Davide D’Ignazio",
+        "jobTitle": "Laravel Developer",
+        "url": "https://davide-dignazio.dev/",
+        "email": "dignazio90@gmail.com",
+        "sameAs": [
+            "https://github.com/dado19994",
+            "https://www.linkedin.com/in/davide-dignazio-dev/"
+        ],
+        "knowsAbout": ["Laravel", "PHP", "JavaScript", "Livewire", "AI Integration", "Web Development", "MySQL"]
+    }
+    </script>
     <!-- Open Graph / Social sharing — aggiorna l’URL con il tuo dominio reale -->
     <meta property="og:type"        content="website" />
     <meta property="og:url"         content="https://davide-dignazio.dev/" />
@@ -40,6 +55,9 @@
             <a href="#contact">Contact</a>
         </div>
 
+        <a href="./assets/cv.pdf" class="nav-cv" download target="_blank" rel="noopener">
+            CV <img class="icon icon-sm" src="./assets/icons/download-dark.svg" alt="" aria-hidden="true">
+        </a>
         <a href="#contact" class="nav-cta">Let’s work together <img class="icon icon-sm" src="./assets/icons/arrow-right-dark.svg" alt="" aria-hidden="true"></a>
     </nav>
 
@@ -121,13 +139,54 @@
         </section>
 
         <section id="about" class="intro-strip section-shell reveal-up">
-            <p class="section-eyebrow">About me</p>
-            <h2>Un profilo tecnico con mentalità di prodotto, design e automazione.</h2>
-            <p>
-                Sono un Web Developer con focus su Laravel, interfacce responsive e integrazioni AI.
-                Arrivo da un background in web marketing e digital strategy: questo mi aiuta a non guardare
-                solo il codice, ma anche obiettivi, UX, contenuti e valore commerciale del progetto.
-            </p>
+            <div class="about-grid">
+                <div class="about-avatar-col">
+                    <div class="about-avatar-wrap">
+                        <img src="./assets/avatar.png"
+                             alt="Davide D'Ignazio"
+                             class="about-avatar-img"
+                             width="120" height="120"
+                             loading="lazy">
+                        <span class="availability-badge">
+                            <span class="avail-dot"></span>
+                            Available for work
+                        </span>
+                    </div>
+                </div>
+                <div class="about-content-col">
+                    <p class="section-eyebrow">About me</p>
+                    <h2>Un profilo tecnico con mentalità di prodotto, design e automazione.</h2>
+                    <p>
+                        Sono un Web Developer con focus su Laravel, interfacce responsive e integrazioni AI.
+                        Arrivo da un background in web marketing e digital strategy: questo mi aiuta a non guardare
+                        solo il codice, ma anche obiettivi, UX, contenuti e valore commerciale del progetto.
+                    </p>
+                    <div class="about-actions">
+                        <a href="./assets/cv.pdf" class="btn-primary-custom" download target="_blank" rel="noopener">
+                            Download CV
+                            <img class="icon icon-sm" src="./assets/icons/download-dark.svg" alt="" aria-hidden="true">
+                        </a>
+                        <a href="https://www.linkedin.com/in/davide-dignazio-dev/" target="_blank" rel="noopener" class="btn-secondary-custom">
+                            LinkedIn
+                            <img class="icon icon-sm" src="./assets/icons/arrow-right.svg" alt="" aria-hidden="true">
+                        </a>
+                    </div>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <strong>3+</strong>
+                            <span>Anni di esperienza</span>
+                        </div>
+                        <div class="about-stat">
+                            <strong>10+</strong>
+                            <span>Progetti completati</span>
+                        </div>
+                        <div class="about-stat">
+                            <strong>5+</strong>
+                            <span>Clienti soddisfatti</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="services" class="section-shell reveal-up">
@@ -198,12 +257,14 @@
                             src="./assets/projects/vendohub/vendohub-home-desktop-png.png"
                             alt="VendoHub AI — Homepage desktop"
                             class="featured-preview-desktop"
+                            width="1855" height="963"
                             loading="eager"
                         >
                         <img
                             src="./assets/projects/vendohub/vendohub-home-mobile.png"
                             alt="VendoHub AI — Vista mobile"
                             class="featured-preview-phone"
+                            width="380" height="670"
                             loading="lazy"
                         >
                     </div>
@@ -222,6 +283,7 @@
                     <div class="project-card-thumb">
                         <img src="./assets/projects/virginia/virginia-home.png"
                              alt="Virginia — Author Website & Editorial CMS"
+                             width="1866" height="964"
                              loading="lazy">
                     </div>
                     <div class="project-card-body">
@@ -348,6 +410,47 @@
                 <article>
                     <div class="skill-heading"><span><img class="icon" src="./assets/icons/wrench.svg" alt="" aria-hidden="true"></span><h3>DevOps & Tools</h3></div>
                     <div class="skill-tags"><span>Git & GitHub</span><span>Docker</span><span>Linux</span><span>VS Code</span><span>GitHub Actions</span></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS — Sostituire con testimonianze reali prima del deploy -->
+        <section class="section-shell testimonials-section reveal-up">
+            <div class="section-heading centered">
+                <span></span>
+                <p class="section-eyebrow">What clients say</p>
+                <span></span>
+            </div>
+
+            <div class="testimonials-grid">
+                <article class="glass-card testimonial-card">
+                    <img class="testimonial-quote-icon" src="./assets/icons/quote.svg" alt="" aria-hidden="true" width="28" height="28">
+                    <p class="testimonial-text">"Davide ha trasformato la nostra idea in un prodotto funzionante in poche settimane. Codice pulito, delivery puntuale e sempre disponibile per ogni richiesta. Lo riingaggierei senza esitazione."</p>
+                    <div class="testimonial-stars" aria-label="5 stelle">★★★★★</div>
+                    <footer class="testimonial-author">
+                        <strong>Marco B.</strong>
+                        <span>Co-founder & CEO, Startup SaaS</span>
+                    </footer>
+                </article>
+
+                <article class="glass-card testimonial-card">
+                    <img class="testimonial-quote-icon" src="./assets/icons/quote.svg" alt="" aria-hidden="true" width="28" height="28">
+                    <p class="testimonial-text">"Finalmente uno sviluppatore che capisce il business oltre che il codice. Ha proposto miglioramenti UX che non avevamo considerato. Il prodotto finale ha superato le aspettative."</p>
+                    <div class="testimonial-stars" aria-label="5 stelle">★★★★★</div>
+                    <footer class="testimonial-author">
+                        <strong>Laura V.</strong>
+                        <span>Product Manager, Agenzia Web</span>
+                    </footer>
+                </article>
+
+                <article class="glass-card testimonial-card">
+                    <img class="testimonial-quote-icon" src="./assets/icons/quote.svg" alt="" aria-hidden="true" width="28" height="28">
+                    <p class="testimonial-text">"L'integrazione AI che ha realizzato era qualcosa che non riuscivamo a trovare altrove. Approccio tecnico solido, comunicazione trasparente e zero sorprese a fine progetto."</p>
+                    <div class="testimonial-stars" aria-label="5 stelle">★★★★★</div>
+                    <footer class="testimonial-author">
+                        <strong>Andrea C.</strong>
+                        <span>CTO, Digital Startup</span>
+                    </footer>
                 </article>
             </div>
         </section>
