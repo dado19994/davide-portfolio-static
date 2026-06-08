@@ -687,7 +687,7 @@ img { max-width: 100%; }
     border: 1px solid rgba(255,255,255,0.09);
     overflow: hidden;
 }
-.contact-links a span { color: var(--gold); font-weight: 950; font-size: 1.1rem; }
+.contact-links a > span:not(.copy-hint) { color: var(--gold); font-weight: 950; font-size: 1.1rem; }
 .contact-links a small { color: var(--muted); font-weight: 700; }
 .contact-links .contact-cta {
     place-items: center;
@@ -888,7 +888,7 @@ img { max-width: 100%; }
 .skill-heading .icon,
 .contact-links .icon { width: 1.18em; height: 1.18em; }
 .skill-heading span,
-.contact-links a > span {
+.contact-links a > span:not(.copy-hint) {
     display: inline-grid;
     place-items: center;
 }
@@ -1080,7 +1080,7 @@ body {
 .service-icon,
 .process-icon,
 .skill-heading span,
-.contact-links a > span {
+.contact-links a > span:not(.copy-hint) {
     color: var(--gold);
     background: rgba(251,191,36,0.11);
     border: 1px solid rgba(251,191,36,0.34);
@@ -1103,7 +1103,7 @@ body {
 }
 
 .skill-heading span,
-.contact-links a > span {
+.contact-links a > span:not(.copy-hint) {
     width: 34px;
     height: 34px;
     border-radius: 11px;
@@ -1161,7 +1161,7 @@ body {
     padding: 18px;
 }
 
-.contact-links a > span { grid-area: icon; }
+.contact-links a > span:not(.copy-hint) { grid-area: icon; }
 .contact-links a small { grid-area: label; font-size: 0.78rem; }
 .contact-links a b {
     grid-area: value;
@@ -1358,7 +1358,7 @@ body {
     align-items: center !important;
     align-content: center !important;
 }
-.contact-links a > span {
+.contact-links a > span:not(.copy-hint) {
     grid-area: icon;
     width: 38px !important;
     height: 38px !important;
@@ -1996,19 +1996,67 @@ h1, h2, h3,
 }
 
 /* 5 ── Email copy hint */
-.email-copyable { cursor: copy; }
+.email-copyable {
+    cursor: copy;
+    grid-template-columns: 42px minmax(0, 1fr) !important;
+    grid-template-areas:
+        "icon label"
+        "icon value"
+        "icon hint" !important;
+    row-gap: 2px;
+}
 .email-copyable:hover { border-color: rgba(251,191,36,0.45) !important; }
+.email-copyable b {
+    white-space: nowrap;
+    overflow-wrap: normal !important;
+    word-break: keep-all;
+    font-size: clamp(0.76rem, 0.78vw, 0.88rem) !important;
+    letter-spacing: -0.01em;
+}
 .copy-hint {
-    display: block;
+    grid-area: hint !important;
+    display: inline-flex;
+    align-items: center;
+    justify-self: start;
+    width: fit-content !important;
+    height: auto !important;
     font-size: 0.68rem;
     color: var(--blue);
     font-weight: 700;
     margin-top: 3px;
-    opacity: 0;
+    opacity: 0.72;
     transition: opacity 0.18s ease;
     font-family: "Manrope", sans-serif;
+    line-height: 1.15;
 }
-.email-copyable:hover .copy-hint { opacity: 1; }
+.email-copyable:hover .copy-hint,
+.email-copyable:focus-visible .copy-hint { opacity: 1; }
+
+@media (max-width: 520px) {
+    .email-copyable {
+        grid-template-columns: 38px minmax(0, 1fr) !important;
+        grid-template-areas:
+            "icon label"
+            "icon value"
+            "icon hint" !important;
+        column-gap: 12px !important;
+        row-gap: 3px !important;
+    }
+
+    .email-copyable b {
+        white-space: nowrap;
+        overflow-wrap: normal !important;
+        word-break: keep-all;
+        font-size: clamp(0.78rem, 3.15vw, 0.9rem) !important;
+        line-height: 1.12;
+    }
+
+    .email-copyable .copy-hint {
+        font-size: 0.72rem;
+        white-space: nowrap;
+        justify-self: end;
+    }
+}
 
 /* 6 ── Stagger reveal */
 .reveal-stagger > * {
