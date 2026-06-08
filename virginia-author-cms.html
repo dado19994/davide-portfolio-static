@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virginia — Author Website & Editorial CMS | Case Study</title>
+    <meta name="description" content="Case study di Virginia, sito editoriale per autrice sviluppato con Laravel, Blade e un pannello admin per gestire libri, articoli, newsletter ed eventi." />
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://davide-dignazio.dev/virginia-author-cms.html" />
+    <meta property="og:title"       content="Virginia — Author CMS | Case Study — Davide D'Ignazio" />
+    <meta property="og:description" content="Sito editoriale per autrice con admin CMS completo, newsletter, blog ed eventi. Laravel + Blade." />
+    <meta property="og:image"       content="https://davide-dignazio.dev/assets/projects/virginia/virginia-home.png" />
+    <meta name="twitter:card"  content="summary_large_image" />
+    <meta name="twitter:image" content="https://davide-dignazio.dev/assets/projects/virginia/virginia-home.png" />
+    <link rel="icon" href="davdevlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="case-page">
+    <nav class="portfolio-navbar" aria-label="Navigazione principale">
+        <a href="./index.html" class="portfolio-logo">
+            <span class="logo-mark">D</span>
+            <span class="logo-copy">Davide D'Ignazio<small>Laravel Developer</small></span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <div class="portfolio-nav-links">
+            <a href="./index.html#about">About</a>
+            <a href="./index.html#services">Services</a>
+            <a href="./index.html#projects">Projects</a>
+            <a href="./index.html#skills">Skills</a>
+            <a href="./index.html#contact">Contact</a>
+        </div>
+
+        <a href="./index.html#contact" class="nav-cta">Let's work together <img class="icon icon-sm" src="./assets/icons/arrow-right-dark.svg" alt="" aria-hidden="true"></a>
+    </nav>
+
+    <main>
+
+        <!-- ── HERO ── -->
+        <section class="case-hero section-shell">
+            <div class="case-copy reveal-up">
+                <a href="./index.html#projects" class="back-link">← Back to portfolio</a>
+                <p class="hero-badge">Case Study <span>•</span> Laravel <span>•</span> Editorial CMS</p>
+                <h1>Virginia<br><span>Author CMS</span></h1>
+                <p>
+                    Sito editoriale per autrice con pagine libro, blog, eventi, newsletter
+                    e pannello admin per gestire contenuti in piena autonomia.
+                </p>
+
+                <div class="project-stack case-stack" style="margin-top: 22px;">
+                    <span>Laravel</span>
+                    <span>Blade</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>Admin Panel</span>
+                    <span>Newsletter</span>
+                    <span>CRUD</span>
+                    <span>Responsive UI</span>
+                </div>
+
+                <div class="hero-actions" style="margin-top: 28px;">
+                    <a href="./index.html#projects" class="btn-secondary-custom">
+                        <img class="icon icon-sm" src="./assets/icons/arrow-right.svg" alt="" aria-hidden="true" style="transform: rotate(180deg);">
+                        Torna al portfolio
+                    </a>
+                    <a href="https://github.com/dado19994" target="_blank" rel="noopener" class="btn-link-custom">
+                        GitHub ↗
+                    </a>
+                </div>
+            </div>
+
+            <div class="case-visual reveal-up delay-1">
+                <img
+                    src="./assets/projects/virginia/virginia-home.png"
+                    alt="Virginia Author Website — homepage pubblica"
+                    class="case-hero-screenshot"
+                    loading="eager"
+                >
+            </div>
+        </section>
+
+        <!-- ── OVERVIEW ── -->
+        <section class="section-shell case-summary reveal-up">
+            <article class="glass-card summary-main">
+                <p class="section-eyebrow">Overview</p>
+                <h2>Un sito editoriale elegante, aggiornabile senza toccare il codice.</h2>
+                <p>
+                    Virginia è un progetto editoriale pensato per valorizzare libri, articoli e contenuti
+                    narrativi attraverso un'interfaccia elegante, leggibile e orientata alla pubblicazione.
+                    Il sito include pagine pubbliche curate e un pannello amministratore per gestire libri,
+                    articoli, testimonianze, newsletter ed eventi.
+                </p>
+            </article>
+            <article class="glass-card summary-stat">
+                <strong>8+</strong>
+                <span>Features principali</span>
+            </article>
+            <article class="glass-card summary-stat">
+                <strong>PHP</strong>
+                <span>Laravel + Blade</span>
+            </article>
+            <article class="glass-card summary-stat">
+                <strong>CMS</strong>
+                <span>Admin panel completo</span>
+            </article>
+        </section>
+
+        <!-- ── PROBLEMA / SOLUZIONE / RISULTATO ── -->
+        <section class="section-shell problem-grid reveal-up">
+            <article class="glass-card">
+                <div class="service-icon">
+                    <img class="icon" src="./assets/icons/book-open.svg" alt="" aria-hidden="true">
+                </div>
+                <h3>Obiettivo</h3>
+                <p>Creare un sito editoriale professionale per un'autrice, che valorizzi i libri, le notizie e la sua presenza online in modo curato e leggibile.</p>
+            </article>
+            <article class="glass-card">
+                <div class="service-icon">
+                    <img class="icon" src="./assets/icons/layout-dashboard.svg" alt="" aria-hidden="true">
+                </div>
+                <h3>Soluzione</h3>
+                <p>Sito pubblico con design editoriale moderno più un pannello admin custom Laravel che permette la gestione autonoma di tutti i contenuti.</p>
+            </article>
+            <article class="glass-card">
+                <div class="service-icon">
+                    <img class="icon" src="./assets/icons/rocket.svg" alt="" aria-hidden="true">
+                </div>
+                <h3>Risultato</h3>
+                <p>Un sito completo, elegante e facilmente aggiornabile, con flussi editoriali chiari e una UX pensata per lettori e per l'autrice stessa.</p>
+            </article>
+        </section>
+
+        <!-- ── FEATURES ── -->
+        <section class="section-shell reveal-up">
+            <div class="section-heading centered">
+                <span></span>
+                <p class="section-eyebrow">Core features</p>
+                <span></span>
+            </div>
+
+            <div class="features-grid-4">
+                <article class="glass-card feature-item">
+                    <div class="service-icon">
+                        <img class="icon" src="./assets/icons/globe.svg" alt="" aria-hidden="true">
+                    </div>
+                    <h3>Sito editoriale responsive</h3>
+                    <p>Design elegante ottimizzato per la lettura su tutti i dispositivi.</p>
+                </article>
+
+                <article class="glass-card feature-item">
+                    <div class="service-icon">
+                        <img class="icon" src="./assets/icons/book-open.svg" alt="" aria-hidden="true">
+                    </div>
+                    <h3>Gestione libri</h3>
+                    <p>Pagine libro con copertina, trama, estratti e dettagli editoriali.</p>
+                </article>
+
+                <article class="glass-card feature-item">
+                    <div class="service-icon">
+                        <img class="icon" src="./assets/icons/newspaper.svg" alt="" aria-hidden="true">
+                    </div>
+                    <h3>Blog articoli</h3>
+                    <p>Sistema blog con categorie, pubblicazione programmata e anteprime.</p>
+                </article>
+
+                <article class="glass-card feature-item">
+                    <div class="service-icon">
+                        <img class="icon" src="./assets/icons/calendar.svg" alt="" aria-hidden="true">
+                    </div>
+                    <h3>Eventi e appuntamenti</h3>
+                    <p>Calendario presentazioni, firmacopie e appuntamenti pubblici.</p>
+                </article>
+
+                <article class="glass-card feature-item">
+                    <div class="service-icon">
+                        <img class="icon" src="./assets/icons/mail.svg" alt="" aria-hidden="true">
+                    </div>
+                    <h3>Newsletter</h3>
+                    <p>Iscrizione lettori, gestione iscritti e invio aggiornamenti.</p>
+                </article>
+
+                <article class="glass-card feature-item">
+                    <div class="service-icon">
+                        <img class="icon" src="./assets/icons/layout-dashboard.svg" alt="" aria-hidden="true">
+                    </div>
+                    <h3>Admin dashboard</h3>
+                    <p>Pannello con statistiche, attività recenti e accesso rapido ai contenuti.</p>
+                </article>
+
+                <article class="glass-card feature-item">
+                    <div class="service-icon">
+                        <img class="icon" src="./assets/icons/database.svg" alt="" aria-hidden="true">
+                    </div>
+                    <h3>CRUD contenuti</h3>
+                    <p>Creazione, modifica e archiviazione di libri, articoli e testimonianze.</p>
+                </article>
+
+                <article class="glass-card feature-item">
+                    <div class="service-icon">
+                        <img class="icon" src="./assets/icons/pen-tool.svg" alt="" aria-hidden="true">
+                    </div>
+                    <h3>Form editoriale</h3>
+                    <p>Editor ricco per nuovi articoli con anteprima, bozze e pubblicazione.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ── ADMIN PANEL ── -->
+        <section class="section-shell reveal-up">
+            <div class="section-heading centered">
+                <span></span>
+                <p class="section-eyebrow">Admin Panel</p>
+                <span></span>
+            </div>
+
+            <div class="glass-card virginia-admin-section">
+                <div>
+                    <p class="section-eyebrow" style="margin-bottom: 14px;">Gestione contenuti autonoma</p>
+                    <h2 style="margin: 0 0 18px; font-size: clamp(1.8rem, 3vw, 2.8rem); letter-spacing: -0.05em; line-height: 1.06;">
+                        Il pannello admin per chi crea contenuti, non codice.
+                    </h2>
+                    <p style="color: var(--muted); line-height: 1.72; font-size: 1rem; margin: 0 0 24px;">
+                        Il pannello admin permette di gestire contenuti editoriali senza intervenire sul codice:
+                        libri, articoli, testimonianze, iscritti newsletter ed eventi. Tutto accessibile
+                        da un'interfaccia chiara, progettata per un uso quotidiano senza frizione.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Dashboard con statistiche e attività recenti</li>
+                        <li>Editor articoli con bozze e pubblicazione programmata</li>
+                        <li>Gestione iscritti newsletter con esportazione</li>
+                        <li>CRUD libri, eventi e testimonianze</li>
+                    </ul>
+                </div>
+                <div class="virginia-admin-imgs">
+                    <img
+                        src="./assets/projects/virginia/virginia-admin-dashboard.png"
+                        alt="Virginia — Dashboard admin con statistiche"
+                        loading="lazy"
+                    >
+                    <img
+                        src="./assets/projects/virginia/virginia-admin-editor.png"
+                        alt="Virginia — Editor per nuovi articoli"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- ── GALLERY ── -->
+        <section class="section-shell reveal-up">
+            <div class="section-heading centered">
+                <span></span>
+                <p class="section-eyebrow">Gallery</p>
+                <span></span>
+            </div>
+
+            <div class="virginia-gallery">
+                <div class="virginia-gallery-item"
+                     data-caption="Homepage pubblica — hero editoriale">
+                    <img
+                        src="./assets/projects/virginia/virginia-home.png"
+                        alt="Virginia — Homepage pubblica con hero editoriale"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="virginia-gallery-item"
+                     data-caption="Catalogo libri con card editoriali">
+                    <img
+                        src="./assets/projects/virginia/virginia-books.png"
+                        alt="Virginia — Pagina libri con card"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="virginia-gallery-item"
+                     data-caption="Dettaglio libro — Eternamente Toska">
+                    <img
+                        src="./assets/projects/virginia/virginia-book-detail.png"
+                        alt="Virginia — Dettaglio libro 'Eternamente Toska'"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="virginia-gallery-item"
+                     data-caption="Admin dashboard — statistiche e attività">
+                    <img
+                        src="./assets/projects/virginia/virginia-admin-dashboard.png"
+                        alt="Virginia — Admin dashboard con statistiche"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- ── ARCHITETTURA ── -->
+        <section class="section-shell architecture-section reveal-up">
+            <div>
+                <p class="section-eyebrow">Architecture</p>
+                <h2>Stack tecnico solido e manutenibile.</h2>
+                <p>
+                    L'architettura separa interfaccia pubblica, logica applicativa Laravel, database MySQL
+                    e pannello admin. Il tutto è costruito su Blade per il rendering server-side,
+                    con pattern MVC pulito e facilmente estendibile.
+                </p>
+            </div>
+            <div class="architecture-flow">
+                <span>Frontend Blade</span>
+                <i>→</i>
+                <span>Laravel</span>
+                <i>→</i>
+                <span>MySQL</span>
+                <i>→</i>
+                <span>Admin Panel</span>
+                <i>→</i>
+                <span>Newsletter</span>
+            </div>
+        </section>
+
+        <!-- ── FINAL RESULT ── -->
+        <section class="section-shell contact-section glass-card reveal-up" style="border-color: rgba(251,191,36,0.28);">
+            <div>
+                <p class="section-eyebrow">Final result</p>
+                <h2>Un sito editoriale <span>completo e autonomo</span>.</h2>
+                <p>
+                    Il risultato è un sito completo, elegante e facilmente aggiornabile, pensato per
+                    un'autrice che vuole presentare il proprio lavoro, raccogliere contatti e gestire
+                    contenuti in modo autonomo — senza dipendere da un tecnico per ogni modifica.
+                </p>
+            </div>
+            <div class="contact-links compact-contact">
+                <a href="https://github.com/dado19994" target="_blank" rel="noopener">
+                    <span><img class="icon" src="./assets/icons/github.svg" alt="" aria-hidden="true"></span>
+                    <small>GitHub</small>
+                    <b>Repository</b>
+                </a>
+                <a href="./index.html#projects">
+                    <span><img class="icon" src="./assets/icons/arrow-right.svg" alt="" aria-hidden="true"></span>
+                    <small>Portfolio</small>
+                    <b>Altri progetti</b>
+                </a>
+                <a href="mailto:dignazio90@gmail.com"
+                   class="contact-cta email-copyable"
+                   data-email="dignazio90@gmail.com">
+                    Contattami <img class="icon icon-sm" src="./assets/icons/arrow-right-dark.svg" alt="" aria-hidden="true">
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="portfolio-footer section-shell">
+        <a href="./index.html" class="footer-brand"><span class="logo-mark">D</span> Davide D'Ignazio</a>
+        <p>© 2026 Davide D'Ignazio. All rights reserved.</p>
+        <p>Crafted with <span>♥</span> and clean code.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

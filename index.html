@@ -3,144 +3,173 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Davide D’Ignazio | Full Stack Web Developer</title>
-    <meta name="description" content="Portfolio di Davide D’Ignazio, Full Stack Web Developer specializzato in Laravel, AI Integration e UI/UX." />
+    <title>Davide D’Ignazio | Laravel Developer & AI Integration</title>
+    <meta name="description" content="Portfolio di Davide D’Ignazio, Laravel Developer specializzato in web products, dashboard, marketplace, AI Integration e UI/UX." />
+    <!-- Open Graph / Social sharing — aggiorna l’URL con il tuo dominio reale -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://davide-dignazio.dev/" />
+    <meta property="og:title"       content="Davide D’Ignazio | Laravel Developer & AI Integration" />
+    <meta property="og:description" content="Portfolio di Davide D’Ignazio, Laravel Developer specializzato in web products, dashboard, marketplace, AI Integration e UI/UX." />
+    <meta property="og:image"       content="https://davide-dignazio.dev/assets/desktop-home.png" />
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="Davide D’Ignazio | Laravel Developer & AI Integration" />
+    <meta name="twitter:description" content="Laravel Developer specializzato in web products, AI Integration e UI/UX." />
+    <meta name="twitter:image"       content="https://davide-dignazio.dev/assets/desktop-home.png" />
     <link rel="icon" href="davdevlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
 </head>
-
 <body>
-    <nav class="portfolio-navbar">
-        <a href="./index.html" class="portfolio-logo">Davide<span>.</span></a>
+    <nav class="portfolio-navbar" aria-label="Navigazione principale">
+        <a href="./index.html" class="portfolio-logo" aria-label="Davide D'Ignazio Home">
+            <span class="logo-mark">D</span>
+            <span class="logo-copy">Davide D’Ignazio<small>Laravel Developer</small></span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
 
         <div class="portfolio-nav-links">
             <a href="#about">About</a>
-            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
             <a href="#projects">Projects</a>
-            <a href="#cv">CV</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </div>
+
+        <a href="#contact" class="nav-cta">Let’s work together <img class="icon icon-sm" src="./assets/icons/arrow-right-dark.svg" alt="" aria-hidden="true"></a>
     </nav>
 
     <main>
-        <section class="hero-section">
-            <div class="hero-glow hero-glow-one"></div>
-            <div class="hero-glow hero-glow-two"></div>
+        <section class="hero-section section-shell" id="top">
+            <div class="ambient-orb orb-one"></div>
+            <div class="ambient-orb orb-two"></div>
 
-            <div class="hero-content">
-                <p class="hero-badge">Laravel • AI Integration • UI/UX</p>
+            <div class="hero-grid">
+                <div class="hero-content reveal-up">
+                    <p class="hero-badge">Laravel Developer <span>•</span> AI Integration</p>
+                    <h1>Davide<br><span>D’Ignazio</span></h1>
+                    <p class="hero-subtitle">
+                        I design and build modern web products with <strong>Laravel</strong>,
+                        <em>AI integration</em> and a focus on performance, scalability and user experience.
+                    </p>
 
-                <h1>Ciao, sono <span>Davide D’Ignazio</span></h1>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary-custom">View projects <img class="icon icon-sm" src="./assets/icons/arrow-right-dark.svg" alt="" aria-hidden="true"></a>
+                        <a href="mailto:dignazio90@gmail.com" class="btn-secondary-custom">Book a call <img class="icon icon-sm" src="./assets/icons/calendar.svg" alt="" aria-hidden="true"></a>
+                    </div>
 
-                <h2>Full Stack Web Developer</h2>
+                    <div class="value-row" aria-label="Valori principali">
+                        <div class="value-item">
+                            <span class="icon-circle"><img class="icon" src="./assets/icons/code.svg" alt="" aria-hidden="true"></span>
+                            <div><strong>Clean code</strong><small>Scalable, reliable, maintainable.</small></div>
+                        </div>
+                        <div class="value-item">
+                            <span class="icon-circle"><img class="icon" src="./assets/icons/gauge.svg" alt="" aria-hidden="true"></span>
+                            <div><strong>Performance first</strong><small>Fast, optimized and SEO-friendly.</small></div>
+                        </div>
+                        <div class="value-item">
+                            <span class="icon-circle"><img class="icon" src="./assets/icons/sparkles.svg" alt="" aria-hidden="true"></span>
+                            <div><strong>AI-powered</strong><small>Smart features that create value.</small></div>
+                        </div>
+                        <div class="value-item">
+                            <span class="icon-circle"><img class="icon" src="./assets/icons/package.svg" alt="" aria-hidden="true"></span>
+                            <div><strong>End-to-end</strong><small>From idea to launch and beyond.</small></div>
+                        </div>
+                    </div>
+                </div>
 
-                <p class="hero-description">
-                    Sviluppo applicazioni web moderne, responsive e scalabili con Laravel,
-                    PHP, JavaScript e strumenti di Intelligenza Artificiale.
-                </p>
+                <div class="hero-visual reveal-up delay-1" aria-hidden="true">
+                    <div class="device-halo"></div>
+                    <div class="laptop-mockup floating-card">
+                        <div class="mockup-topbar">
+                            <span>VendoHub AI</span>
+                            <i></i><i></i><i></i>
+                        </div>
+                        <div class="mockup-layout">
+                            <aside>
+                                <b></b><b></b><b></b><b></b><b></b><b></b>
+                            </aside>
+                            <div class="mockup-main">
+                                <div class="mockup-kpis">
+                                    <span><small>Total Orders</small><strong>1,248</strong></span>
+                                    <span><small>Revenue</small><strong>€24,820</strong></span>
+                                    <span><small>Customers</small><strong>3,462</strong></span>
+                                </div>
+                                <div class="chart-card">
+                                    <div class="chart-line"></div>
+                                </div>
+                                <div class="mockup-split">
+                                    <span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="hero-actions">
-                    <a href="#projects" class="btn-primary-custom">Guarda i progetti</a>
-                    <a href="./downloads/davide-dignazio-cv.pdf" target="_blank" class="btn-secondary-custom">Scarica CV</a>
-                    <a href="https://github.com/dado19994" target="_blank" class="btn-secondary-custom">GitHub</a>
+                    <div class="phone-mockup floating-card delay-float">
+                        <div class="phone-notch"></div>
+                        <span class="phone-title">VendoHub AI</span>
+                        <div class="phone-metric"><small>Revenue</small><strong>€24,780</strong></div>
+                        <div class="phone-metric"><small>Orders</small><strong>312</strong></div>
+                        <div class="phone-chart"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="portfolio-section">
+        <section id="about" class="intro-strip section-shell reveal-up">
             <p class="section-eyebrow">About me</p>
-            <h2>Costruisco prodotti web moderni con attenzione a UX, performance e AI.</h2>
-
+            <h2>Un profilo tecnico con mentalità di prodotto, design e automazione.</h2>
             <p>
-                Sono un Full Stack Web Developer con background in Web Marketing e Digital Strategy.
-                Mi concentro sulla creazione di applicazioni Laravel moderne, interfacce responsive
-                e soluzioni intelligenti basate su automazioni e AI.
+                Sono un Web Developer con focus su Laravel, interfacce responsive e integrazioni AI.
+                Arrivo da un background in web marketing e digital strategy: questo mi aiuta a non guardare
+                solo il codice, ma anche obiettivi, UX, contenuti e valore commerciale del progetto.
             </p>
         </section>
 
-        <section id="skills" class="portfolio-section">
-            <p class="section-eyebrow">Skills</p>
-            <h2>Competenze principali</h2>
+        <section id="services" class="section-shell reveal-up">
+            <div class="section-heading centered">
+                <span></span>
+                <p class="section-eyebrow">What I build</p>
+                <span></span>
+            </div>
 
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Frontend</h3>
-                    <p>HTML5, CSS3, JavaScript, Bootstrap, UI responsive.</p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Backend</h3>
-                    <p>PHP, Laravel, REST API, MySQL, architettura MVC.</p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>AI & Tools</h3>
-                    <p>Cloud Vision AI, GitHub, VS Code, Livewire, Fortify.</p>
-                </div>
+            <div class="service-grid">
+                <article class="glass-card service-card">
+                    <div class="service-icon"><img class="icon" src="./assets/icons/globe.svg" alt="" aria-hidden="true"></div>
+                    <h3>Professional websites</h3>
+                    <p>Modern, responsive and optimized for performance and SEO.</p>
+                </article>
+                <article class="glass-card service-card">
+                    <div class="service-icon"><img class="icon" src="./assets/icons/layout.svg" alt="" aria-hidden="true"></div>
+                    <h3>Admin dashboards</h3>
+                    <p>Intuitive dashboards to manage data and complex processes.</p>
+                </article>
+                <article class="glass-card service-card">
+                    <div class="service-icon"><img class="icon" src="./assets/icons/cart.svg" alt="" aria-hidden="true"></div>
+                    <h3>Platforms & marketplaces</h3>
+                    <p>Secure platforms with payments, users, products and more.</p>
+                </article>
+                <article class="glass-card service-card">
+                    <div class="service-icon"><img class="icon" src="./assets/icons/brain.svg" alt="" aria-hidden="true"></div>
+                    <h3>AI integrations</h3>
+                    <p>Intelligent integrations, data analysis and AI-powered features.</p>
+                </article>
             </div>
         </section>
 
-        <section id="cv" class="portfolio-section cv-section">
-            <p class="section-eyebrow">Curriculum</p>
-
-            <h2>Un profilo tecnico orientato a prodotto, AI e UX.</h2>
-
-            <p>
-                Ho un background che unisce sviluppo web, digital strategy e attenzione
-                all’esperienza utente. Il mio focus principale è costruire applicazioni
-                moderne con Laravel, Livewire, Bootstrap e integrazioni AI.
-            </p>
-
-            <div class="cv-highlights">
-                <div>
-                    <strong>2026</strong>
-                    <span>Full Stack Developer — Aulab Hackademy</span>
-                </div>
-
-                <div>
-                    <strong>2023+</strong>
-                    <span>Laravel, marketplace, AI integration e progetti personali</span>
-                </div>
-
-                <div>
-                    <strong>2021-2023</strong>
-                    <span>Media & Marketing — Mercatino Franchising</span>
-                </div>
-            </div>
-
-            <a href="./downloads/davide-dignazio-cv.pdf" target="_blank" class="btn-primary-custom">
-                Scarica il CV
-            </a>
-        </section>
-
-        <section id="projects" class="portfolio-section">
-            <p class="section-eyebrow">Featured project</p>
-            <h2>VendoHub AI</h2>
-
-            <div class="project-card featured-project">
+        <section id="projects" class="section-shell reveal-up">
+            <div class="featured-project glass-card">
                 <div class="project-content">
-                    <span class="project-tag">Marketplace AI-driven</span>
-
-                    <h3>Marketplace intelligente multi-categoria</h3>
-
+                    <p class="section-eyebrow">Featured project</p>
+                    <h2>VendoHub <span>AI</span></h2>
                     <p>
-                        VendoHub AI è una piattaforma per pubblicare e gestire annunci online,
-                        progettata con Laravel, Livewire, Bootstrap, Fortify e Google Cloud Vision AI.
-                        L’obiettivo è semplificare la compravendita online con una UX moderna,
-                        veloce e accessibile.
+                        AI-powered marketplace per riconoscimento prodotti, analytics e gestione vendite.
+                        Un progetto scalabile costruito con Laravel, Livewire, Fortify e Cloud Vision AI.
                     </p>
-
-                    <p class="project-note">
-                        Case study completo con overview, architettura, UX, funzionalità AI e roadmap.
-                    </p>
-
-                    <ul>
-                        <li>Gestione annunci e upload immagini</li>
-                        <li>Area utente e autenticazione con Fortify</li>
-                        <li>Design responsive mobile-first</li>
-                        <li>Moderazione immagini tramite Cloud Vision AI</li>
-                        <li>Architettura scalabile e manutenibile</li>
-                    </ul>
 
                     <div class="project-stack">
                         <span>Laravel</span>
@@ -150,58 +179,217 @@
                         <span>Cloud Vision AI</span>
                     </div>
 
+                    <ul class="feature-list">
+                        <li>AI product recognition with high accuracy</li>
+                        <li>Real-time analytics and advanced dashboards</li>
+                        <li>Secure user flows and authentication</li>
+                        <li>Scalable architecture and clean codebase</li>
+                    </ul>
+
                     <div class="hero-actions project-actions">
-                        <a href="./vendohub-ai.html" class="btn-primary-custom">Leggi case study</a>
-                        <a href="https://github.com/dado19994" target="_blank" class="btn-secondary-custom">GitHub</a>
+                        <a href="./vendohub-ai.html" class="btn-primary-custom">View case study <img class="icon icon-sm" src="./assets/icons/arrow-right-dark.svg" alt="" aria-hidden="true"></a>
+                        <a href="https://github.com/dado19994" target="_blank" rel="noopener" class="btn-link-custom">Live demo ↗</a>
                     </div>
                 </div>
 
                 <div class="project-preview">
-                    <div class="browser-card">
-                        <div class="browser-dots">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-
-                        <div class="mockup-content">
-                            <div class="mockup-navbar"></div>
-                            <div class="mockup-hero"></div>
-                            <div class="mockup-grid">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
+                    <div class="featured-preview-wrap">
+                        <img
+                            src="./assets/projects/vendohub/vendohub-home-desktop-png.png"
+                            alt="VendoHub AI — Homepage desktop"
+                            class="featured-preview-desktop"
+                            loading="eager"
+                        >
+                        <img
+                            src="./assets/projects/vendohub/vendohub-home-mobile.png"
+                            alt="VendoHub AI — Vista mobile"
+                            class="featured-preview-phone"
+                            loading="lazy"
+                        >
                     </div>
                 </div>
             </div>
+
+            <div class="section-heading centered compact-heading">
+                <span></span>
+                <p class="section-eyebrow">More projects</p>
+                <span></span>
+            </div>
+
+            <div class="projects-grid reveal-stagger">
+                <!-- 1: Virginia — REAL PROJECT (primo, featured) -->
+                <article class="project-card project-card-featured">
+                    <div class="project-card-thumb">
+                        <img src="./assets/projects/virginia/virginia-home.png"
+                             alt="Virginia — Author Website & Editorial CMS"
+                             loading="lazy">
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Virginia — Author Website <span class="highlight">&amp;</span> Editorial CMS</h3>
+                        <p class="project-card-desc">Sito editoriale per autrice e scrittrice con pagine libro, blog, eventi, newsletter e pannello admin per gestire i contenuti.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>Editorial CMS</span>
+                            <span>Admin Panel</span>
+                        </div>
+                        <a href="./virginia-author-cms.html" class="project-link">View case study <img class="icon icon-sm" src="./assets/icons/external-link.svg" alt="" aria-hidden="true"></a>
+                    </div>
+                </article>
+
+                <!-- 2: Portfolio Website -->
+                <article class="project-card">
+                    <div class="project-card-thumb thumb-portfolio" aria-hidden="true">
+                        <div class="project-card-thumb-inner"></div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Portfolio Website</h3>
+                        <p class="project-card-desc">Personal portfolio con design system moderno, animazioni fluide e layout ottimizzato per ogni dispositivo.</p>
+                        <div class="project-tags">
+                            <span>HTML / CSS</span>
+                            <span>JavaScript</span>
+                            <span>Design System</span>
+                        </div>
+                        <a href="#top" class="project-link">View project <img class="icon icon-sm" src="./assets/icons/external-link.svg" alt="" aria-hidden="true"></a>
+                    </div>
+                </article>
+
+                <!-- 3: Laravel CRUD — coming soon -->
+                <article class="project-card project-card-soon">
+                    <div class="project-card-thumb thumb-crud" aria-hidden="true">
+                        <div class="project-card-thumb-inner"></div>
+                        <div class="soon-thumb-cover">
+                            <img class="icon" src="./assets/icons/wrench.svg" alt="" aria-hidden="true">
+                            <span>In progress</span>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="soon-chip">
+                            <span class="soon-dot"></span>
+                            Case study in arrivo
+                        </div>
+                        <h3>Laravel CRUD Project</h3>
+                        <p class="project-card-desc">Sistema CRUD completo con validazione avanzata, gestione ruoli e flussi di autenticazione sicuri.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <span class="project-link-disabled">
+                            Updating soon <img class="icon icon-sm" src="./assets/icons/wrench.svg" alt="" aria-hidden="true">
+                        </span>
+                    </div>
+                </article>
+
+                <!-- 4: Novera Platform — coming soon -->
+                <article class="project-card project-card-soon">
+                    <div class="project-card-thumb thumb-novera" aria-hidden="true">
+                        <div class="project-card-thumb-inner"></div>
+                        <div class="soon-thumb-cover">
+                            <img class="icon" src="./assets/icons/wrench.svg" alt="" aria-hidden="true">
+                            <span>In progress</span>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="soon-chip">
+                            <span class="soon-dot"></span>
+                            Case study in arrivo
+                        </div>
+                        <h3>Novera Platform Concept</h3>
+                        <p class="project-card-desc">Concept SaaS per team, con dashboard analytics, gestione utenti e flussi di lavoro collaborativi.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>Livewire</span>
+                            <span>SaaS</span>
+                        </div>
+                        <span class="project-link-disabled">
+                            Updating soon <img class="icon icon-sm" src="./assets/icons/wrench.svg" alt="" aria-hidden="true">
+                        </span>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section id="contact" class="portfolio-section contact-section">
-            <p class="section-eyebrow">Contact</p>
-            <h2>Costruiamo qualcosa di moderno.</h2>
+        <section class="section-shell process-section reveal-up">
+            <div class="section-heading centered">
+                <span></span>
+                <p class="section-eyebrow">How I work</p>
+                <span></span>
+            </div>
 
-            <p>
-                Sono disponibile per opportunità come Web Developer, progetti freelance
-                e collaborazioni su applicazioni Laravel, AI e marketplace.
-            </p>
+            <div class="process-row">
+                <article><div class="process-icon"><img class="icon" src="./assets/icons/search.svg" alt="" aria-hidden="true"></div><strong>01</strong><h3>Discover</h3><p>I listen to your needs and analyze the context.</p></article>
+                <article><div class="process-icon"><img class="icon" src="./assets/icons/sitemap.svg" alt="" aria-hidden="true"></div><strong>02</strong><h3>Design & Structure</h3><p>I design UX, architecture and functional flows.</p></article>
+                <article><div class="process-icon"><img class="icon" src="./assets/icons/code.svg" alt="" aria-hidden="true"></div><strong>03</strong><h3>Develop</h3><p>I build clean, scalable and tested solutions.</p></article>
+                <article><div class="process-icon"><img class="icon" src="./assets/icons/rocket.svg" alt="" aria-hidden="true"></div><strong>04</strong><h3>Launch</h3><p>I deploy with care and ensure a smooth start.</p></article>
+                <article><div class="process-icon"><img class="icon" src="./assets/icons/shield.svg" alt="" aria-hidden="true"></div><strong>05</strong><h3>Support</h3><p>I provide ongoing support and continuous improvement.</p></article>
+            </div>
+        </section>
 
-            <div class="hero-actions">
-                <a href="mailto:dignazio90@gmail.com" class="btn-primary-custom">Contattami</a>
-                <a href="https://github.com/dado19994" target="_blank" class="btn-secondary-custom">GitHub</a>
-                <a href="https://www.linkedin.com/in/davide-dignazio-dev/" target="_blank" class="btn-secondary-custom">LinkedIn</a>
+        <section id="skills" class="section-shell skills-panel glass-card reveal-up">
+            <div class="section-heading centered compact-heading">
+                <span></span>
+                <p class="section-eyebrow">Skills & Technologies</p>
+                <span></span>
+            </div>
+
+            <div class="skills-grid">
+                <article>
+                    <div class="skill-heading"><span><img class="icon" src="./assets/icons/layout.svg" alt="" aria-hidden="true"></span><h3>Frontend</h3></div>
+                    <div class="skill-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span><span>Tailwind CSS</span><span>Bootstrap</span></div>
+                </article>
+                <article>
+                    <div class="skill-heading"><span><img class="icon" src="./assets/icons/server.svg" alt="" aria-hidden="true"></span><h3>Backend</h3></div>
+                    <div class="skill-tags"><span>PHP</span><span>Laravel</span><span>Livewire</span><span>MySQL</span><span>REST API</span><span>GraphQL</span></div>
+                </article>
+                <article>
+                    <div class="skill-heading"><span><img class="icon" src="./assets/icons/brain.svg" alt="" aria-hidden="true"></span><h3>AI & Integrations</h3></div>
+                    <div class="skill-tags"><span>OpenAI API</span><span>Cloud Vision AI</span><span>Postman</span><span>Webhooks</span><span>Automations</span></div>
+                </article>
+                <article>
+                    <div class="skill-heading"><span><img class="icon" src="./assets/icons/wrench.svg" alt="" aria-hidden="true"></span><h3>DevOps & Tools</h3></div>
+                    <div class="skill-tags"><span>Git & GitHub</span><span>Docker</span><span>Linux</span><span>VS Code</span><span>GitHub Actions</span></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section-shell contact-section glass-card reveal-up">
+            <div>
+                <p class="section-eyebrow">Have a project in mind?</p>
+                <h2>Let’s build something <span>great</span> together.</h2>
+                <p>I’m available for new projects, collaborations and agency partnerships.</p>
+            </div>
+
+            <div class="contact-links">
+                <a href="mailto:dignazio90@gmail.com"
+                   class="email-copyable"
+                   data-email="dignazio90@gmail.com"
+                   title="Clicca per copiare l’email">
+                    <span><img class="icon" src="./assets/icons/mail.svg" alt="" aria-hidden="true"></span>
+                    <small>Email</small>
+                    <b>dignazio90@gmail.com</b>
+                    <span class="copy-hint">Clicca per copiare</span>
+                </a>
+                <a href="https://github.com/dado19994" target="_blank" rel="noopener">
+                    <span><img class="icon" src="./assets/icons/github.svg" alt="" aria-hidden="true"></span>
+                    <small>GitHub</small>
+                    <b>github.com/dado19994</b>
+                </a>
+                <a href="https://www.linkedin.com/in/davide-dignazio-dev/" target="_blank" rel="noopener">
+                    <span><img class="icon" src="./assets/icons/linkedin.svg" alt="" aria-hidden="true"></span>
+                    <small>LinkedIn</small>
+                    <b>davide-dignazio-dev</b>
+                </a>
+                <a href="mailto:dignazio90@gmail.com" class="contact-cta">
+                    Let’s talk <img class="icon icon-sm" src="./assets/icons/arrow-right-dark.svg" alt="" aria-hidden="true">
+                </a>
             </div>
         </section>
     </main>
 
-    <footer class="portfolio-footer">
-        <p>© 2026 Davide D’Ignazio — Full Stack Web Developer</p>
-
-        <div>
-            <a href="https://github.com/dado19994" target="_blank">GitHub</a>
-            <a href="mailto:dignazio90@gmail.com">Email</a>
-        </div>
+    <footer class="portfolio-footer section-shell">
+        <a href="#top" class="footer-brand"><span class="logo-mark">D</span> Davide D’Ignazio</a>
+        <p>© 2026 Davide D’Ignazio. All rights reserved.</p>
+        <p>Crafted with <span>♥</span> and clean code.</p>
     </footer>
 
     <script src="./script.js"></script>

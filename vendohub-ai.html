@@ -3,156 +3,257 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VendoHub AI | Case Study</title>
-    <meta name="description" content="Case study di VendoHub AI, marketplace intelligente sviluppato con Laravel, Livewire e Cloud Vision AI." />
+    <title>VendoHub AI | Case Study — Davide D'Ignazio</title>
+    <meta name="description" content="Case study di VendoHub AI, marketplace intelligente sviluppato con Laravel, Livewire, Fortify e Cloud Vision AI." />
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://davide-dignazio.dev/vendohub-ai.html" />
+    <meta property="og:title"       content="VendoHub AI | Case Study — Davide D'Ignazio" />
+    <meta property="og:description" content="Marketplace intelligente con AI image recognition, Laravel e Livewire." />
+    <meta property="og:image"       content="https://davide-dignazio.dev/assets/projects/vendohub/vendohub-home-desktop-png.png" />
+    <meta name="twitter:card"  content="summary_large_image" />
+    <meta name="twitter:image" content="https://davide-dignazio.dev/assets/projects/vendohub/vendohub-home-desktop-png.png" />
+    <link rel="icon" href="davdevlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
 </head>
+<body class="case-page">
 
-<body>
-
-    <nav class="portfolio-navbar">
+    <nav class="portfolio-navbar" aria-label="Navigazione principale">
         <a href="./index.html" class="portfolio-logo">
-            Davide<span>.</span>
+            <span class="logo-mark">D</span>
+            <span class="logo-copy">Davide D'Ignazio<small>Laravel Developer</small></span>
         </a>
+
+        <button class="nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
 
         <div class="portfolio-nav-links">
             <a href="./index.html#about">About</a>
-            <a href="./index.html#skills">Skills</a>
+            <a href="./index.html#services">Services</a>
             <a href="./index.html#projects">Projects</a>
+            <a href="./index.html#skills">Skills</a>
             <a href="./index.html#contact">Contact</a>
         </div>
+
+        <a href="./index.html#contact" class="nav-cta">
+            Let's work together
+            <img class="icon icon-sm" src="./assets/icons/arrow-right-dark.svg" alt="" aria-hidden="true">
+        </a>
     </nav>
 
     <main>
 
-        <section class="case-hero">
-            <a href="./index.html" class="back-link">← Torna al portfolio</a>
+        <!-- ── HERO ── -->
+        <section class="case-hero section-shell">
+            <div class="case-copy reveal-up">
+                <a href="./index.html#projects" class="back-link">← Back to portfolio</a>
+                <p class="hero-badge">Case Study <span>•</span> Laravel <span>•</span> AI Integration</p>
+                <h1>VendoHub <span>AI</span></h1>
+                <p>
+                    Marketplace intelligente multi-categoria pensato per pubblicare, gestire e moderare
+                    annunci online con una UX pulita, flussi sicuri e automazioni basate su AI.
+                </p>
 
-            <p class="hero-badge">Case Study • Laravel • AI Integration</p>
-
-            <h1>VendoHub AI</h1>
-
-            <p>
-                Marketplace intelligente multi-categoria progettato per semplificare
-                la pubblicazione, gestione e moderazione degli annunci online.
-            </p>
-
-            <div class="project-stack case-stack">
-                <span>Laravel</span>
-                <span>Livewire</span>
-                <span>Fortify</span>
-                <span>Bootstrap</span>
-                <span>Cloud Vision AI</span>
-                <span>MySQL</span>
-            </div>
-        </section>
-
-        <section class="case-showcase">
-            <div class="showcase-desktop">
-                <img src="./assets/desktop-home.png" alt="Homepage desktop VendoHub AI">
-            </div>
-
-            <div class="showcase-mobile">
-                <img src="./assets/mobile-home.png" alt="Homepage mobile VendoHub AI">
-            </div>
-        </section>
-
-        <section class="portfolio-section">
-            <p class="section-eyebrow">Overview</p>
-            <h2>Il problema</h2>
-
-            <p>
-                Molti marketplace risultano complessi, dispersivi e poco intuitivi.
-                Pubblicare un annuncio richiede spesso troppi passaggi e l’esperienza
-                utente può diventare lenta, soprattutto da mobile.
-            </p>
-        </section>
-
-        <section class="portfolio-section">
-            <p class="section-eyebrow">Solution</p>
-            <h2>La soluzione</h2>
-
-            <p>
-                VendoHub AI nasce per offrire una piattaforma moderna, veloce e
-                accessibile, dove l’utente può pubblicare annunci in pochi passaggi,
-                gestire immagini, categorie e contenuti con il supporto di automazioni AI.
-            </p>
-
-            <div class="case-grid">
-
-                <div class="case-card">
-                    <h3>UX semplificata</h3>
-                    <p>
-                        Flusso di pubblicazione chiaro, guidato e mobile-first.
-                    </p>
+                <div class="project-stack case-stack" style="margin-top: 22px;">
+                    <span>Laravel</span>
+                    <span>Livewire</span>
+                    <span>Fortify</span>
+                    <span>Bootstrap</span>
+                    <span>Cloud Vision AI</span>
+                    <span>MySQL</span>
                 </div>
 
-                <div class="case-card">
-                    <h3>AI Integration</h3>
-                    <p>
-                        Cloud Vision AI supporta analisi immagini e moderazione contenuti.
-                    </p>
+                <div class="hero-actions" style="margin-top: 28px;">
+                    <a href="https://github.com/dado19994" target="_blank" rel="noopener" class="btn-primary-custom">
+                        GitHub <img class="icon icon-sm" src="./assets/icons/external-link.svg" alt="" aria-hidden="true">
+                    </a>
+                    <a href="./index.html#projects" class="btn-secondary-custom">
+                        <img class="icon icon-sm" src="./assets/icons/arrow-right.svg" alt="" aria-hidden="true" style="transform:rotate(180deg)">
+                        Portfolio
+                    </a>
                 </div>
+            </div>
 
-                <div class="case-card">
-                    <h3>Scalabilità</h3>
-                    <p>
-                        Architettura Laravel pensata per crescere con nuove feature.
-                    </p>
-                </div>
-
+            <div class="case-visual reveal-up delay-1">
+                <img
+                    src="./assets/projects/vendohub/vendohub-home-desktop-png.png"
+                    alt="VendoHub AI — Homepage desktop con hero e featured listings"
+                    class="case-hero-screenshot"
+                    loading="eager"
+                >
             </div>
         </section>
 
-        <section class="portfolio-section">
-            <p class="section-eyebrow">Features</p>
-            <h2>Funzionalità principali</h2>
+        <!-- ── OVERVIEW ── -->
+        <section class="section-shell case-summary reveal-up">
+            <article class="glass-card summary-main">
+                <p class="section-eyebrow">Overview</p>
+                <h2>Da marketplace didattico a prodotto digitale credibile.</h2>
+                <p>
+                    VendoHub AI nasce come progetto Laravel completo: gestione annunci, autenticazione,
+                    upload immagini, moderazione AI e architettura pensata per evolvere in un prodotto reale.
+                </p>
+            </article>
+            <article class="glass-card summary-stat">
+                <strong>AI</strong>
+                <span>Image moderation & recognition</span>
+            </article>
+            <article class="glass-card summary-stat">
+                <strong>UX</strong>
+                <span>Mobile-first selling flow</span>
+            </article>
+            <article class="glass-card summary-stat">
+                <strong>PHP</strong>
+                <span>Laravel scalable architecture</span>
+            </article>
+        </section>
 
-            <div class="features-list">
+        <!-- ── PROBLEMA / SOLUZIONE / RISULTATO ── -->
+        <section class="section-shell problem-grid reveal-up">
+            <article class="glass-card">
+                <div class="service-icon">
+                    <img class="icon" src="./assets/icons/alert.svg" alt="" aria-hidden="true">
+                </div>
+                <h3>Problema</h3>
+                <p>Molti marketplace risultano dispersivi, lenti da usare da mobile e con moderazione manuale poco efficiente.</p>
+            </article>
+            <article class="glass-card">
+                <div class="service-icon">
+                    <img class="icon" src="./assets/icons/check.svg" alt="" aria-hidden="true">
+                </div>
+                <h3>Soluzione</h3>
+                <p>Un flusso ordinato per pubblicare annunci, dashboard chiare e AI per supportare analisi immagini e controllo contenuti.</p>
+            </article>
+            <article class="glass-card">
+                <div class="service-icon">
+                    <img class="icon" src="./assets/icons/rocket.svg" alt="" aria-hidden="true">
+                </div>
+                <h3>Risultato</h3>
+                <p>Un progetto credibile, scalabile e presentabile come case study tecnico/prodotto con un'interfaccia reale completa.</p>
+            </article>
+        </section>
 
+        <!-- ── CORE FEATURES ── -->
+        <section class="section-shell reveal-up">
+            <div class="section-heading centered">
+                <span></span>
+                <p class="section-eyebrow">Core features</p>
+                <span></span>
+            </div>
+
+            <div class="features-list premium-list">
                 <div>
                     <strong>01</strong>
                     <span>Gestione annunci</span>
-
-                    <p>
-                        Creazione, modifica ed eliminazione annunci tramite interfaccia intuitiva.
-                    </p>
+                    <p>Creazione, modifica, stato di pubblicazione, categorie e contenuti gestiti in modo ordinato.</p>
                 </div>
-
                 <div>
                     <strong>02</strong>
-                    <span>Upload immagini</span>
-
-                    <p>
-                        Caricamento immagini responsive e gestione contenuti visuali.
-                    </p>
+                    <span>Autenticazione sicura</span>
+                    <p>Registrazione, login, recupero password e flussi account tramite Laravel Fortify.</p>
                 </div>
-
                 <div>
                     <strong>03</strong>
-                    <span>Area utente</span>
-
-                    <p>
-                        Gestione profilo, annunci pubblicati e sicurezza account.
-                    </p>
+                    <span>Upload immagini</span>
+                    <p>Gestione media responsive e preparazione dei contenuti visuali per moderazione automatizzata.</p>
                 </div>
-
                 <div>
                     <strong>04</strong>
                     <span>Moderazione AI</span>
-
-                    <p>
-                        Analisi automatica delle immagini con Google Cloud Vision AI.
-                    </p>
+                    <p>Cloud Vision AI supporta analisi immagini, rilevamento contenuti sensibili e classificazione.</p>
                 </div>
-
             </div>
         </section>
 
-        <section class="portfolio-section">
-            <p class="section-eyebrow">Architecture</p>
-            <h2>Architettura tecnica</h2>
+        <!-- ── GALLERY — REAL SCREENSHOTS ── -->
+        <section class="section-shell reveal-up">
+            <div class="section-heading centered">
+                <span></span>
+                <p class="section-eyebrow">Gallery</p>
+                <span></span>
+            </div>
 
+            <!-- Featured: marketplace overview (wide) -->
+            <div class="vendohub-gallery-item vendohub-gallery-featured"
+                 data-caption="Marketplace — listings pubblici con filtri e categorie">
+                <img
+                    src="./assets/projects/vendohub/vendohub-marketplace.png"
+                    alt="VendoHub — Marketplace con annunci, filtri e categorie"
+                    loading="lazy"
+                >
+            </div>
+
+            <!-- Row 1: homepage, seller dashboard, reviewer dashboard -->
+            <div class="vendohub-gallery-3">
+                <div class="vendohub-gallery-item"
+                     data-caption="Homepage pubblica">
+                    <img
+                        src="./assets/projects/vendohub/vendohub-home-desktop-png.png"
+                        alt="VendoHub AI — Homepage desktop"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="vendohub-gallery-item"
+                     data-caption="Seller dashboard">
+                    <img
+                        src="./assets/projects/vendohub/vendohub-seller-dashboard.png"
+                        alt="VendoHub — Dashboard venditore con statistiche e annunci"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="vendohub-gallery-item"
+                     data-caption="Reviewer / Admin dashboard">
+                    <img
+                        src="./assets/projects/vendohub/vendohub-reviewer-dashboard.png"
+                        alt="VendoHub — Dashboard revisore con moderazione AI"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+
+            <!-- Row 2: create listing, chat, mobile -->
+            <div class="vendohub-gallery-3">
+                <div class="vendohub-gallery-item"
+                     data-caption="Pubblica un annuncio">
+                    <img
+                        src="./assets/projects/vendohub/vendohub-create-listing.png"
+                        alt="VendoHub — Form creazione annuncio con upload immagini"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="vendohub-gallery-item"
+                     data-caption="Messaggistica integrata">
+                    <img
+                        src="./assets/projects/vendohub/vendohub-chat.png"
+                        alt="VendoHub — Sistema di messaggistica tra acquirente e venditore"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="vendohub-gallery-item"
+                     data-caption="Mobile-first UI">
+                    <img
+                        src="./assets/projects/vendohub/vendohub-home-mobile.png"
+                        alt="VendoHub — Vista mobile ottimizzata"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- ── ARCHITETTURA ── -->
+        <section class="section-shell architecture-section reveal-up">
+            <div>
+                <p class="section-eyebrow">Architecture</p>
+                <h2>Struttura tecnica chiara e manutenibile.</h2>
+                <p>
+                    L'architettura separa interfaccia, logica applicativa, database e servizi esterni.
+                    Questo rende il progetto più leggibile, scalabile e pronto per future integrazioni.
+                </p>
+            </div>
             <div class="architecture-flow">
                 <span>Frontend</span>
                 <i>→</i>
@@ -160,84 +261,61 @@
                 <i>→</i>
                 <span>Database</span>
                 <i>→</i>
-                <span>AI & Mail Services</span>
-            </div>
-
-            <p>
-                L’architettura separa le responsabilità tra interfaccia, logica applicativa,
-                database e servizi esterni. Questo rende il progetto più ordinato,
-                manutenibile e pronto per evoluzioni future.
-            </p>
-        </section>
-
-        <section class="portfolio-section">
-            <p class="section-eyebrow">Gallery</p>
-            <h2>Interfacce principali</h2>
-
-            <div class="gallery-grid">
-
-                <div class="gallery-card">
-                    <img src="./assets/desktop-home.png" alt="Desktop preview">
-                    <span>Homepage desktop</span>
-                </div>
-
-                <div class="gallery-card">
-                    <img src="./assets/article-detail.png" alt="Article detail">
-                    <span>Pagina dettaglio articolo</span>
-                </div>
-
-                <div class="gallery-card">
-                    <img src="./assets/dashboard.png" alt="Dashboard">
-                    <span>Dashboard utente</span>
-                </div>
-
+                <span>AI Services</span>
+                <i>→</i>
+                <span>Mail & Jobs</span>
             </div>
         </section>
 
-        <section class="portfolio-section">
-            <p class="section-eyebrow">Roadmap</p>
-            <h2>Evoluzioni future</h2>
-
+        <!-- ── ROADMAP ── -->
+        <section class="section-shell reveal-up">
+            <div class="section-heading centered compact-heading">
+                <span></span>
+                <p class="section-eyebrow">Roadmap</p>
+                <span></span>
+            </div>
             <div class="roadmap-grid">
                 <div>Chat utenti</div>
                 <div>Pagamenti integrati</div>
                 <div>Dashboard analytics</div>
                 <div>Recensioni utenti</div>
-                <div>AI suggerimento prezzi</div>
+                <div>AI price suggestion</div>
                 <div>App mobile</div>
             </div>
         </section>
 
-        <section class="portfolio-section contact-section">
-            <p class="section-eyebrow">Final result</p>
-
-            <h2>Un progetto pensato come prodotto reale.</h2>
-
-            <p>
-                VendoHub AI non è solo un esercizio tecnico: è un progetto costruito
-                con logica di prodotto, attenzione alla UX e integrazione di tecnologie moderne.
-            </p>
-
-            <div class="hero-actions">
-                <a href="https://github.com/dado19994" target="_blank" class="btn-primary-custom">
-                    GitHub
+        <!-- ── FINAL RESULT ── -->
+        <section class="section-shell contact-section glass-card reveal-up"
+                 style="border-color: rgba(251,191,36,0.28);">
+            <div>
+                <p class="section-eyebrow">Final result</p>
+                <h2>Un progetto pensato come <span>prodotto reale</span>.</h2>
+                <p>VendoHub AI unisce sviluppo Laravel, UX, sicurezza, automazioni e logica di prodotto in un'unica applicazione scalabile.</p>
+            </div>
+            <div class="contact-links compact-contact">
+                <a href="https://github.com/dado19994" target="_blank" rel="noopener">
+                    <span><img class="icon" src="./assets/icons/github.svg" alt="" aria-hidden="true"></span>
+                    <small>GitHub</small>
+                    <b>Repository</b>
                 </a>
-
-                <a href="./index.html" class="btn-secondary-custom">
-                    Torna al portfolio
+                <a href="./index.html#projects">
+                    <span><img class="icon" src="./assets/icons/arrow-right.svg" alt="" aria-hidden="true"></span>
+                    <small>Portfolio</small>
+                    <b>Torna ai progetti</b>
+                </a>
+                <a href="mailto:dignazio90@gmail.com" class="contact-cta">
+                    Contattami
+                    <img class="icon icon-sm" src="./assets/icons/arrow-right-dark.svg" alt="" aria-hidden="true">
                 </a>
             </div>
         </section>
 
     </main>
 
-    <footer class="portfolio-footer">
-        <p>© 2026 Davide D’Ignazio — Full Stack Web Developer</p>
-
-        <div>
-            <a href="https://github.com/dado19994" target="_blank">GitHub</a>
-            <a href="mailto:dignazio90@gmail.com">Email</a>
-        </div>
+    <footer class="portfolio-footer section-shell">
+        <a href="./index.html" class="footer-brand"><span class="logo-mark">D</span> Davide D'Ignazio</a>
+        <p>© 2026 Davide D'Ignazio. All rights reserved.</p>
+        <p>Crafted with <span>♥</span> and clean code.</p>
     </footer>
 
     <script src="./script.js"></script>
